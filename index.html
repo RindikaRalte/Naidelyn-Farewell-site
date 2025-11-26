@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Farewell Naidelyn</title>
+</head>
+<body>
+    <div class="card">
+    <div class="marquee fancy">
+    <marquee scrollamount="20">
+        <img src="./nyan_cat.png" class="nyan">  
+        Farewell Naidelyn  
+        <img src="./nyan_cat.png" class="nyan">
+    </marquee>
+</div>
+
+    <video class="side-video left" autoplay muted loop playsinline>
+        <source src="./cat.mp4" type="video/mp4">
+    </video>
+
+    <video class="side-video right" autoplay muted loop playsinline>
+        <source src="./cat.mp4" type="video/mp4">
+    </video>
+
+    <button class="cute-btn" onclick="openPopup()">Click here 💖</button>
+
+ <div id="cute-popup" class="popup-overlay">
+    <div class="popup-box">
+        <h2>🌸 Naidelyn 🌸</h2>
+        <p>🌷Good luck on your next beautiful chapter 🌷</p>
+        <button class="close-btn" onclick="closePopup()">Close</button>
+    </div>
+ </div>
+
+ <script>
+    function openPopup() {
+        document.getElementById("cute-popup").style.display = "flex";
+    }
+
+    function closePopup() {
+        document.getElementById("cute-popup").style.display = "none";
+    }
+</script>
+</div>
+
+
+
+    
+</body>
+</html>
